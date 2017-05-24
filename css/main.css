@@ -54,6 +54,12 @@
 	vertical-align: middle;
 }
 
+#row-lesspad {
+	padding-top: 15px;
+	padding-bottom: 5px;
+	vertical-align: middle;
+}
+
 .imagebox {
 	height: 33%;
     width: 33%;
@@ -70,6 +76,10 @@
 
 span.glyphicon {
     font-size: 120px;
+    display: inline-block;
+    padding-top: 70px;
+    float: none;
+}
 }
 
 #imagebox {
@@ -100,12 +110,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 	display: block;
 }
 
+.alert .alert-custom {
+	background-color: #00d1fe;
+	color: #fff;
+}
+
 .container {
 	width: auto;
     max-width: 680px;
     padding: 0 15px;
 }
-
 
 p {
 	margin-left: 1%;
