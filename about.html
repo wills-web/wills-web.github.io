@@ -8,12 +8,15 @@
 		<meta name="description" content="Will's guide to the web! Find out information about the big bad internet!">
 		<meta name="keywords" content="Websites, Will Mulrooney, Web, Internet, Tutorial, Help">
 		<meta name="author" content="Will Mulrooney">
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>		
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+		<!-- <meta http-equiv="refresh" content="30"> Auto-refresh, for development only!-->	
 				
-		<!-- Bootstrap 3.3.7 & Main CSS -->
+		<!-- Bootstrap 3.3.7 & Custom CSS -->
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet">
 		<link href="css\main.css" rel="stylesheet">
+		<link href="css\about.css" rel="stylesheet">
 		<link href="css\animations.css" rel="stylesheet">
+		<link href="css\snackbar.css" rel="stylesheet">
 		<link href="css\sticky-footer.css" rel="stylesheet">
 		<link href="css\ie10-viewpoint-fix.css" rel="stylesheet">
 		
@@ -42,11 +45,11 @@
 					  <ul class="nav navbar-nav">
 						<li><a href="index.html">Home</a></li>
 						<li class="active"><a href="about.html">About</a></li>
-						<li><a href="#">Education</a></li>
-						<li><a href="#">E-Safety</a></li>
-						<li><a href="#">Software</a></li>
-						<li><a href="#">Downloads</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a onclick="showComingSoon()">Education</a></li>
+						<li><a onclick="showComingSoon()">E-Safety</a></li>
+						<li><a onclick="showComingSoon()">Software</a></li>
+						<li><a onclick="showComingSoon()">Downloads</a></li>
+						<li><a onclick="showComingSoon()">Contact</a></li>
 					  </ul>
 					</div>
 				</div>
@@ -56,7 +59,7 @@
 	
 	<!-- Jumbotron block -->
 	<div class="jumbotron-container"> <!-- Container for the jumbotron header! -->
-		<div class="jumbotron jumbotron-fluid animate fadeInDown" id="jumbotronbox">
+		<div class="jumbotron jumbotron-fluid" id="jumbotronbox">
 		  <div class="image-container">
 			<center><img src="media\images\logos\mainheader.png" alt="Will's World logo!"></center>
 		  </div>
@@ -65,23 +68,55 @@
 	
 	<!-- Constrictor block! -->
 	<div class="constrictor">
-		<div class="content-container">
-			<div class="row animate fadeInLeft">
+		<div class="content-container animate fadeInUp">
+			<div class="row" id="toprow">
 				<div class="col-md-8"><span class="vcenter">
-					<h2>About!</h2>					
-					<p>Welcome to Will's Web! This website hosts all manners of different content, ranging from guides on how to survive GCSE Computer Science, to my latest software releases, to learning resources! Take your time to browse my site and enjoy the content that you can use!</p>
+					<h2>About!</h2>
+					<p>So what is Will's Web about? This website is all about providing a platform in which I can develop my web and client based development skills, along with hosting a variety of content.</p>
 					<p></p>
-					<p>You can find out more about all the cool stuff we've got on this site on the <a href="about.html">about page</a>, or if you have a question, query or concern: Contact me on the <a href="contact.html">contact page!</a></p>
+					<p>On Will's Web you will be able to find revision resources, articles, information regarding being safe online, a catalogue of my software, as well as a downloads section for various files.</p>
 				</span></div>
 				<div class="col-md-4">
-					<div id="imagebox"><center><span class="glyphicon glyphicon-thumbs-up vcenter"></span></center></div>
+					<div id="imagebox"><center><span class="glyphicon glyphicon-lamp vcenter" alt="shedding some light on the situation" id="lampiconbox"></span></center></div>
 				</div>				
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p>Will's Web operates as a single developer, me! I have been programming for nearly five years, using languages such as Small Basic (when I first learned to code), Python, C#, HTML and even Pawn! Right now, I'm looking to expand my skills in web development, in order to showcase my work and produce educational content.</p>
+				</div>
+			</div>
+			<div class="row" id="alertrow-top">
+				<div class="alert alert-info" role="alert">
+					<div class="row" id="alertrowbox">
+						<div class="col-md-2">
+							<center><span class="glyphicon glyphicon-info-sign vcenter" alt="information!" id="infoicon-top"></span></center>
+						</div>
+						<div class="col-md-10">
+							<p>Want to request content? Having trouble with something? No worries! Head on over to my contact page to find out information on how you can get in touch with me!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" id="alertrow-bottom">
+				<div class="alert alert-info" role="alert">
+					<div class="row" id="alertrowbox">
+						<div class="col-md-2">
+							<center><span class="glyphicon glyphicon-info-sign vcenter" alt="information!" id="infoicon-bottom"></span></center>
+						</div>
+						<div class="col-md-10">
+							<p>Want to commission some software or a website? Get in touch and I'll be happy to get back to you as soon as I can!</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="footer navbar-fixed-bottom animate fadeInUp">
+	
+	<div id="snackbar">Coming soon!</div>
+	
+	<div class="footer navbar-fixed-bottom">
 		<div class="container">
-			<center><h5>© Will's World 2017</h5></center>
+			<center><h5>© Will's Web 2017</h5></center>
 		</div>
 	</div>
 	<script src="js\ie10-viewpoint-fix.js"></script>
