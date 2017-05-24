@@ -92,6 +92,13 @@
     float: none;
 }
 
+.glyph-generic {
+	font-size: 120px;
+	display: inline-block;
+	float: none;
+	padding-top: 80px;
+}
+
 .glyph-left {
 	    font-size: 120px;
 		display: inline-block;

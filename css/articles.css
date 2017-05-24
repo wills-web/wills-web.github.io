@@ -1,0 +1,28 @@
+h6 {
+	margin-left: 0%;
+	margin-top: -1%;
+}
+
+p {
+	margin-left: 0%;
+}
+
+.article-headerformat {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.badge {
+	background-color: #00d1fe;
+}
+
+a {
+	color: #fff;
+	font-weight: normal;
+}
+
+a:hover, a:focus {
+	color: #fff;
+	text-decoration: normal;
+	cursor:pointer;
+}

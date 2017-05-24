@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Basic metadata -->
+		<title>Articles - Will's Web</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Will's guide to the web! Find out information about the big bad internet!">
+		<meta name="keywords" content="Websites, Will Mulrooney, Web, Internet, Tutorial, Help">
+		<meta name="author" content="Will Mulrooney">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+		<!-- <meta http-equiv="refresh" content="30"> Auto-refresh, for development only!-->	
+				
+		<!-- Bootstrap 3.3.7 & Custom CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet">
+		<link href="css\main.css" rel="stylesheet">
+		<link href="css\articles.css" rel="stylesheet">
+		<link href="css\animations.css" rel="stylesheet">
+		<link href="css\snackbar.css" rel="stylesheet">
+		<link href="css\sticky-footer.css" rel="stylesheet">
+		<link href="css\ie10-viewpoint-fix.css" rel="stylesheet">
+		
+		<script type="text/javascript" src="js\pagefunctions.js" ></script>
+		
+	</head>
+	
+	<body>
+	<!-- Header block -->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container-fluid" id="navigationbar">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="main-container"> 
+					<div class="fixer-container"> 
+					  <ul class="nav navbar-nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a onclick="showComingSoon()">Education</a></li>
+						<li><a onclick="showComingSoon()">E-Safety</a></li>
+						<li class="active"><a href="articles.html">Computing Articles</a></li>
+						<li><a onclick="showComingSoon()">Downloads</a></li>
+						<li><a onclick="showComingSoon()">Contact</a></li>
+					  </ul>
+					</div>
+				</div>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	
+	<!-- Jumbotron block -->
+	<div class="jumbotron-container"> <!-- Container for the jumbotron header! -->
+		<div class="jumbotron jumbotron-fluid" id="jumbotronbox">
+		  <div class="image-container">
+			<center><img src="media\images\logos\mainheader.png" alt="Will's World logo!" id="headerimage"></center>
+		  </div>
+		</div>
+	</div>
+	
+	<!-- Constrictor block! -->
+	<div class="constrictor">
+		<div class="content-container animate fadeInUp">
+			<div class="row" id="toprow">
+				<div class="col-md-8"><span class="vcenter">
+					<h2>Articles</h2>
+					<p>This section of the website hosts a number of articles regarding the subject of Computing and Software Development.</p>
+				</span></div>			
+			</div>
+			
+			<!-- ARTICLE CONTENT -->
+			<div class="row" id="toprow">
+				<div class="col-md-10"><span class="vcenter">
+					<span class="article-headerformat"><a class="articlelink" onclick="showComingSoon()">Net Neutrality, Why Does It Matter?</a> <span class="badge">NEW</span></span>
+					<h6>24th May 2017</h6>
+				</span></div>
+				<div class="col-md-2"><span class="vcenter">
+					<h6>24th May 2017</h6>
+				</span></div>		
+			</div>
+		</div>
+	</div>
+	
+	<div id="snackbar">Coming soon!</div>
+	
+	<div class="footer navbar-fixed-bottom">
+		<div class="container">
+			<center><h5>© Will's Web 2017</h5></center>
+		</div>
+	</div>
+	<script src="js\ie10-viewpoint-fix.js"></script>
+	</body>
+</html>
+
