@@ -21,14 +21,20 @@
 #infoicon-top {
 	font-size: 45px;
 	padding-top: 0px;
+	margin-left: 15px;
 }
 
 #infoicon-bottom {
 	font-size: 45px;
 	padding-top: 0px;
+	margin-left: 15px;
 }
 
 #alertrowbox {
 	padding-top: 8px;
 	padding-bottom: 0px;
+}
+
+.central-content {
+	margin-top: 50%;
 }
