@@ -13,58 +13,21 @@
 				
 		<!-- Bootstrap 3.3.7 & Custom CSS -->
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" rel="stylesheet">
-		<link href="css\main.css" rel="stylesheet">
-		<link href="css\about.css" rel="stylesheet">
-		<link href="css\animations.css" rel="stylesheet">
-		<link href="css\snackbar.css" rel="stylesheet">
-		<link href="css\sticky-footer.css" rel="stylesheet">
-		<link href="css\ie10-viewpoint-fix.css" rel="stylesheet">
+		<link href="http://wills-web.com/css/main.css" rel="stylesheet">
+		<link href="http://wills-web.com/css/about.css" rel="stylesheet">
+		<link href="http://wills-web.com/css/animations.css" rel="stylesheet">
+		<link href="http://wills-web.com/css/snackbar.css" rel="stylesheet">
+		<link href="http://wills-web.com/css/sticky-footer.css" rel="stylesheet">
+		<link href="http://wills-web.com/css/ie10-viewpoint-fix.css" rel="stylesheet">
 		
-		<script type="text/javascript" src="js\pagefunctions.js" ></script>
+		<script type="text/javascript" src="http://wills-web.com/js/pagefunctions.js" ></script>
+		<script type="text/javascript" src="http://wills-web.com/js/universalFeatures.js" ></script>
 		
 	</head>
 	
-	<body>
+	<body onload="getUniversalFeatures('about');">
 	<!-- Header block -->
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-		<div class="container-fluid" id="navigationbar">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
-			</div>
-
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<div class="main-container"> 
-					<div class="fixer-container"> 
-					  <ul class="nav navbar-nav">
-						<li><a href="index.html">Home</a></li>
-						<li class="active"><a href="about.html">About</a></li>
-						<li><a onclick="showComingSoon()">Education</a></li>
-						<li><a onclick="showComingSoon()">E-Safety</a></li>
-						<li><a href="articles.html">Computing Articles</a></li>
-						<li><a onclick="showComingSoon()">Downloads</a></li>
-						<li><a onclick="showComingSoon()">Contact</a></li>
-					  </ul>
-					</div>
-				</div>
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
-	</nav>
-	
-	<!-- Jumbotron block -->
-	<div class="jumbotron-container"> <!-- Container for the jumbotron header! -->
-		<div class="jumbotron jumbotron-fluid" id="jumbotronbox">
-		  <div class="image-container">
-			<center><img src="media\images\logos\mainheader.png" alt="Will's World logo!" id="headerimage"></center>
-		  </div>
-		</div>
-	</div>
+	<div id="navbarBox"></div>
 	
 	<!-- Constrictor block! -->
 	<div class="constrictor">
@@ -85,11 +48,11 @@
 			<div class="row" id="alertrow-top">
 				<div class="alert alert-info" role="alert">
 					<div class="row" id="alertrowbox">
-						<div class="col-md-2">
+						<div class="col-md-1">
 							<center><span class="glyphicon glyphicon-info-sign vcenter" alt="information!" id="infoicon-top"></span></center>
 						</div>
-						<div class="col-md-10">
-							<p>Want to request content? Having trouble with something? No worries! Head on over to my contact page to find out information on how you can get in touch with me!</p>
+						<div class="col-md-11">
+							<span class="central-content"><p>Want to request content? Having trouble with something? No worries! Head on over to my contact page to find out information on how you can get in touch with me!</p></span>
 						</div>
 					</div>
 				</div>
@@ -97,11 +60,11 @@
 			<div class="row" id="alertrow-bottom">
 				<div class="alert alert-info" role="alert">
 					<div class="row" id="alertrowbox">
-						<div class="col-md-2">
+						<div class="col-md-1">
 							<center><span class="glyphicon glyphicon-info-sign vcenter" alt="information!" id="infoicon-bottom"></span></center>
 						</div>
-						<div class="col-md-10">
-							<p>Want to commission some software or a website? Get in touch and I'll be happy to get back to you as soon as I can!</p>
+						<div class="col-md-11">
+							<span class="central-content"><p>Want to commission some software or a website? Get in touch and I'll be happy to get back to you as soon as I can with information regarding my services!</p></span>
 						</div>
 					</div>
 				</div>
@@ -116,6 +79,6 @@
 			<center><h5>© Will's Web 2017</h5></center>
 		</div>
 	</div>
-	<script src="js\ie10-viewpoint-fix.js"></script>
+	<script src="http://wills-web.com/js/ie10-viewpoint-fix.js"></script>
 	</body>
 </html>
