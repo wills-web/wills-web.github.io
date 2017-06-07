@@ -24,7 +24,7 @@ function getUniversalFeatures(pageToFetch) {
 						'<li id="esafeButton"><a onclick="showComingSoon()">E-Safety</a></li>' +
 						'<li id="computingButton"><a href="http://wills-web.com/articles.html">Computing Articles</a></li>' +
 						'<li id="downloadsButton"><a onclick="showComingSoon()">Downloads</a></li>' +
-						'<li id="contactButton"><a onclick="showComingSoon()">Contact</a></li>' +
+						'<li id="contactButton"><a href="http://wills-web.com/contact.html">Contact</a></li>' +
 					  '</ul>' +
 					'</div>' +
 				'</div>' +
@@ -57,6 +57,9 @@ function getUniversalFeatures(pageToFetch) {
 	}
 	else if (pageToFetch == 'downloads') {
 		document.getElementById("downloadsButton").className += "active";
+	}
+	else if (pageToFetch == 'contact') {
+		document.getElementById("contactButton").className += "active";
 	}
 	
 }
