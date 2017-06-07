@@ -1,0 +1,32 @@
+.row {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	vertical-align: middle;
+}
+
+#alertrow-top {
+	padding-top: 15px;
+}
+
+#lampiconbox {
+	padding-top: 40px;
+	font-size: 120px;
+}
+
+#toprow {
+	padding-top: 20px;
+	padding-bottom: 0px;
+}
+
+.central-content {
+	margin-top: 50%;
+}
+
+#contact-text-row {
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+
+#contact-text {
+	font-size: 30px;
+}
