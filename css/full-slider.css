@@ -4,17 +4,9 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full-slider/blob/master/LICENSE)
  */
 
- #secVidDiv {
-  overflow: hidden;
- }
-
- #secVid {
-  position: absolute;
-  width: auto !important;
-  background-size: cover;
-  transition: 1s opacity;
-  z-index:-1;
- }
+#hackDiv {
+  background-color: #000;
+}
 
  .capt {
    text-shadow: 1px 1px 8px #000000;
@@ -28,4 +20,9 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
 }
