@@ -4,6 +4,10 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-post/blob/master/LICENSE)
  */
 
+.onerow {
+  max-width: calc(100%/3.1);
+}
+
 body {
   padding-top: 54px;
 }
