@@ -42,7 +42,27 @@ table {
 
  .capt {
    text-shadow: 1px 1px 8px #000000;
+   -webkit-transition: ease 1s;
+   transition: ease 1s;
  }
+
+ .capt :hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+ }
+
+ .carousel-caption {
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+  cursor: pointer !important;
+}
+
+.carousel-caption:hover {
+ -webkit-transform: scale(1.3);
+ -ms-transform: scale(1.3);
+ transform: scale(1.3);
+}
 
 .carousel-item {
   height: 100vh;

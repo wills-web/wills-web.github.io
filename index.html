@@ -11,9 +11,9 @@
     <title>Will Mulrooney Portfolio</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://wills-web.com/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/full-slider.css" rel="stylesheet">
+    <link href="http://wills-web.com/css/full-slider.css" rel="stylesheet">
 
   </head>
 
@@ -34,13 +34,13 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="projects/paperwork-plusplus.html">Paperwork++</a>
+              <a class="nav-link" href="http://wills-web.com/projects/paperwork-plusplus.html">Paperwork++</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="projects/paperwork-plus.html">PaperworkPlus</a>
+                <a class="nav-link" href="http://wills-web.com/projects/paperwork-plus.html">PaperworkPlus</a>
               </li>
             <li class="nav-item">
-              <a class="nav-link" href="projects/gta.html">GTA IV & V Mods</a>
+              <a class="nav-link" href="http://wills-web.com/projects/gta.html">GTA IV & V Mods</a>
             </li>
           </ul>
         </div>
@@ -73,7 +73,7 @@
                   </div>
 
                   <!--Caption-->
-                  <div class="carousel-caption">
+                  <div class="carousel-caption" onclick="window.location.href = 'http://wills-web.com/projects/paperwork-plusplus.html'">
                       <div class="animated fadeInDown">
                           <h3 class="h3-responsive capt">Paperwork++</h3>
                           <p class="capt">PHP 7 Web Application for Gaming Community Statistic Tracking</p>
@@ -95,7 +95,7 @@
                   </div>
 
                   <!--Caption-->
-                  <div class="carousel-caption">
+                  <div class="carousel-caption" onclick="window.location.href = 'http://wills-web.com/projects/gta.html'">
                       <div class="animated fadeInDown">
                           <h3 class="h3-responsive capt">Game Modding</h3>
                           <p class="capt">Adapting existing software to product exciting new outcomes.</p>
@@ -117,7 +117,7 @@
                   </div>
 
                   <!--Caption-->
-                  <div class="carousel-caption">
+                  <div class="carousel-caption" onclick="document.getElementById('skills').scrollIntoView();">
                       <div class="animated fadeInDown">
                           <h3 class="h3-responsive capt">Cyber Security</h3>
                           <p class="capt">Developing an understanding of technical security challenges in computing.</p>
@@ -139,7 +139,7 @@
                   </div>
 
                   <!--Caption-->
-                  <div class="carousel-caption">
+                  <div class="carousel-caption" onclick="document.getElementById('hack').scrollIntoView();">
                       <div class="animated fadeInDown">
                           <h3 class="h3-responsive capt">Repurposing</h3>
                           <p class="capt">Tinkering and tweaking things to get new uses out of existing devices.</p>
@@ -161,7 +161,7 @@
                   </div>
 
                   <!--Caption-->
-                  <div class="carousel-caption">
+                  <div class="carousel-caption" onclick="document.getElementById('skills').scrollIntoView();">
                       <div class="animated fadeInDown">
                           <h3 class="h3-responsive capt">Graphics Design</h3>
                           <p class="capt">A personal project to develop Adobe Photoshop skills and design methods.</p>
@@ -210,75 +210,78 @@
         <!-- Paragraph 2 -->
         <p>A catalogue of my most prominent projects is accessible through the navigation bar above. Some information is provided about each project, along with pictures, code snippets (where appropriate), and other development resources that I've used.</p>
         
-        <hr>
         
-        <!-- Subtitle -->
-        <h2>Skills</h2>
-        <!-- Skills Array -->
-        <div class="row">
-            <div class="col-md-3">
-                <table class="table">
-                    <tr>
-                        <th>Programming</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="skillText">
-                                    Coding is the core skill of most Computer Scientists. While I don't boast the world's best programmer, I do consider myself a competent and legible code monkey.
+        
+        <div id="skills">
+            <hr>
+            <!-- Subtitle -->
+            <h2>Skills</h2>
+            <!-- Skills Array -->
+            <div class="row">
+                <div class="col-md-3">
+                    <table class="table">
+                        <tr>
+                            <th>Programming</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="skillText">
+                                        Coding is the core skill of most Computer Scientists. While I don't boast the world's best programmer, I do consider myself a competent and legible code monkey.
+                                        <br><br>
+                                        My competent languages include C#, PHP 7, MySQL, and HTML, among many snippets of other languages, like LUA and Python.
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-3">
+                    <table class="table" id="design">
+                        <tr>
+                            <th>Graphics & UI</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="skillText">
+                                        Since my first dabbling with game texture modification in 2013, I have grown my graphics development skills. Originally based in, popular freeware image editing software, PaintDotNet, I have transitioned into usage of Adobe Photoshop CC.
+                                        <br><br>
+                                        Evidence of this is seen in the <a href="projects/gta.html">GTA IV & V Mods</a> page.
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-3">
+                    <table class="table" id="cyber">
+                        <tr>
+                            <th>Cyber Security</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="skillText">
+                                        In the ever growing world of networked devices, it is important that we bear in mind the security and safety of our expanding technological capabilities.
+                                        <br><br>
+                                        My skillset in Cyber Security is a relatively new one and one which I hope to expand as I continue to study and work on various projects.
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-3">
+                    <table class="table">
+                        <tr>
+                            <th>Project Management</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="skillText">
+                                    Project Management is the art of being able to develop a product to a required standard. In my own experience, developing both PaperworkPlus and Paperwork++ took time, patience, and skill, both in terms of development and planning sprints.
                                     <br><br>
-                                    My competent languages include C#, PHP 7, MySQL, and HTML, among many snippets of other languages, like LUA and Python.
-                            </span>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-md-3">
-                <table class="table">
-                    <tr>
-                        <th>Graphics & UI</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="skillText">
-                                    Since my first dabbling with game texture modification in 2013, I have grown my graphics development skills. Originally based in, popular freeware image editing software, PaintDotNet, I have transitioned into usage of Adobe Photoshop CC.
-                                    <br><br>
-                                    Evidence of this is seen in the <a href="projects/gta.html">GTA IV & V Mods</a> page.
-                            </span>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-md-3">
-                <table class="table">
-                    <tr>
-                        <th>Cyber Security</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="skillText">
-                                    In the ever growing world of networked devices, it is important that we bear in mind the security and safety of our expanding technological capabilities.
-                                    <br><br>
-                                    My skillset in Cyber Security is a relatively new one and one which I hope to expand as I continue to study and work on various projects.
-                            </span>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-md-3">
-                <table class="table">
-                    <tr>
-                        <th>Project Management</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="skillText">
-                                Project Management is the art of being able to develop a product to a required standard. In my own experience, developing both PaperworkPlus and Paperwork++ took time, patience, and skill, both in terms of development and planning sprints.
-                                <br><br>
-                                Personally, I am a fan of the Agile-Scrum methodology.
-                            </span>
-                        </td>
-                    </tr>
-                </table>
+                                    Personally, I am a fan of the Agile-Scrum methodology.
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
 
@@ -304,7 +307,7 @@
                     <div class="col-md-3">
                         <center><img class="img-responsive" src="http://wills-web.com/img/whitehat.png" /></center>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-9" id="hack">
                         <h4>White Hat Hacking</h4>
                         <p>As I delve into studies surrounding Cyber Security, I feel it will also be imperative that I develop skill sets that will be relevant. In doing so I am working on an online course titled "The Complete Guide to Ethical Hacking".</p>
                         <p>I will implement these skills into future projects, in order to protect any code written.</p>
