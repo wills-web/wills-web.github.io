@@ -68,51 +68,116 @@
           <hr>
 
           <!-- Post Content -->
-          <p class="lead">As part of my involvement in the <a href="https://lcpdfr.com">LCPDFR community</a>, the C# Windows Forms Application, <a href="http://www.lcpdfr.com/files/file/15711-paperworkplus-now-share-your-logs-via-our-online-database/">PaperworkPlus</a> was released in an attempt to hone realism.</p>
+          <p class="lead">Carrying on from <a href="http://wills-web.com/projects/paperwork-plus.html">PaperworkPlus</a>, I have decided to develop a PHP 7 web application. This will make the program more accessible and easier to use. Paperwork++ is an ongoing personal and academic project, being used for my A-Level Computer Science course.</p>
 
-          <p>PaperworkPlus was a project that ran in late spring 2017. Using a Windows Forms Application structure and C#, I developed PaperworkPlus, a program that can be used to track statistics collecting during gameplay.</p>
+          <p>This descision was reached based on user feedback from PaperworkPlus v1.6. Users outlined that by using the program, they had to continually tab out of the game in order to fill out forms. While users wanted to have this level of realism, it had to be accessible.</p>
+
+          <p>Choosing to make a web application was based on the idea that users wouldn't have to tab out of their game. In all circumstances, either of the following can happen with Paperwork++.
+            <ul>
+              <li>The end-user has Grand Theft Auto V installed on their Steam Account. This means the application will be accessible via the Steam In-Game Overlay.</li>
+              <li>The end-user has a mobile device (reccomended to use tablet-sized device due to limitations) that they can use to access the project online.</li>
+            </ul>
+            These factors lead to me choosing to use a web platform for Paperwork++.
+          </p>
+
+          <p><strong>But why PHP?</strong> Hypertext Preprocessor is a major server-side programming language that presents a huge array of opportunity. The task that I set out to complete would simply not be possible with client-side processing, and would be very hard to achieve without a language as dynamic PHP.</p>
 
           <hr>
           <!-- Thumbnail Row -->
           <div class="row thumbn">
               <div class="col-md-1"></div>
               <div class="col-md-10">
-                  <img class="img-responsive" width="98%" src="http://wills-web.com/img/ppp/inlinephp.png" />
-              </div>
-              <div class="col-md-1"></div>
-          </div> <!-- /.thumbnail row -->
-          <div class="row thumbn">
-              <div class="col-md-1"></div>
-              <div class="col-md-10">
-                  <!--<img class="img-responsive" width="98%" src="http://wills-web.com/img/pp/azure.png" />    -->
+                  <a href="http://wills-web.com/img/ppp/inlinephp.png"><img class="img-responsive" width="98%" src="http://wills-web.com/img/ppp/inlinephp.png" /></a>
+                  <center><span class="videofoot">Here, in-line PHP is used to generate a select component with contents from a database.</span></center>
               </div>
               <div class="col-md-1"></div>
           </div> <!-- /.thumbnail row -->
           <hr>
           
-          <p>PaperworkPlus used an array of different technologies, including, but not limited to...</p>
+          <p>Paperwork++ is different to PaperworkPlus as it adds a whole new level of automation. In PaperworkPlus, when users wished to use the online database service, they had to register an account. These accounts, due to limitations, had to be approved and added manually.</p>
+
+          <p>Now, with PHP server-side processing, accounts are registered in the traditional email authentication method. Within only a few days of publishing the website for users to pre-register their accounts, over 100 users had authenticated.</p>
+          
+          <p>But what other languages, frameworks, and technologies does Paperwork++ use, and why?</p>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-11">
               <ul>
-                <li>C#</li>
-                <li>Windows Forms Application Framework</li>
-                <li>XML File Save/Read</li>
-                <li>Microsoft Azure</li>
+                <li><strong>PHP 7</strong> - The core processing language used by Paperwork++, it handles most server-side requests and database management.</li>
+                <li><strong>MySQL</strong> - Paperwork++'s database is structured with MySQL, making database transactions clean and easy, as MySQL enforces ACID rules.</li>
+                <li><strong>JQuery</strong> - A fantastic extension of JavaScript, JQuery is used on Paperwork++ to bring pages to life with data-based transition animations.</li>
+                <li><strong>phpBB 3.2</strong> - In PaperworkPlus, handling user support requests was challenging as there was no clear structure. Now, with phpBB installed on a forum subdomain, development-user communication is much stronger.</li>
               </ul>
             </div>
-            <div class="col-md-6">
-                <ul>
-                  <li>Transact-SQL</li>
-                  <li>LINQ</li>
-                  <li>Photoshop (for GUI elements)</li>
-                </ul>
-              </div>
           </div>
-          
-          <p>Further content</p>
 
-          <p>code snippets</p>
-          <div class="code">Here is a code snippet</div>
+          <!-- Thumbnail Row -->
+          <hr>
+          <div class="row thumbn">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <a href="http://wills-web.com/img/ppp/jquery.png"><img class="img-responsive" width="98%" src="http://wills-web.com/img/ppp/jquery.png" /></a>
+                <center><span class="videofoot">JQuery being used to change elements shown when a select box is changed. Shows future development.</span></center>
+            </div>
+            <div class="col-md-1"></div>
+          </div> <!-- /.thumbnail row -->
+          <hr>
+            
+          <p>As Paperwork++ processes personal data, its important to take into consideration legislation surrounding data processing. Not just that of the Data Protection Act, which is current UK legislation, but that of the future, including the General Data Protection Regulation, laws which will override the DPA.</p>
+
+          <p>Furthermore, in terms of security, the system should be analyses to ensure that all possible bases are covered. While a perfect system will never exist, its important to try implement as many vulnerability patches as possible.</p>
+
+          <p>Paperwork++ deals in a lot of user input and database queries, so SQL injection methods will have to be well protected against. One potential option is to filter characters inputted in order to remove anything that may cause an issue.</p>
+
+          <!-- Thumbnail Row -->
+          <hr>
+          <div class="row thumbn">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <a href="http://wills-web.com/img/ppp/sql.png"><img class="img-responsive" width="98%" src="http://wills-web.com/img/ppp/sql.png" /></a>
+                <center><span class="videofoot">MySQL query that returns a list of categories stored in the database. This query takes no parameters, but one which does is exploitable.</span></center>
+            </div>
+            <div class="col-md-1"></div>
+          </div> <!-- /.thumbnail row -->
+          <hr>
+
+          <p>Another major factor to consider is the structure of said database and whether or not it meets normalised standards. A number of databases exist, all with a multitude of tables. In these databases, tables must be well set out, clearly identified, and well-related. Failure to do so will likely lead to problems further down the development line.</p>
+
+          <!-- Thumbnail Row -->
+          <hr>
+          <div class="row thumbn">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <a href="http://wills-web.com/img/ppp/db.png"><img class="img-responsive" width="98%" src="http://wills-web.com/img/ppp/db.png" /></a>
+                <center><span class="videofoot">The ticket definitions table, showing some example data entered for testing.</span></center>
+            </div>
+            <div class="col-md-1"></div>
+          </div> <!-- /.thumbnail row -->
+          <hr>
+
+          <h5>How has this compared to my GCSE coursework?</h5>
+          <p>At GCSE level Computer Science, I produced a Maths Quiz for students to use and teachers to monitor results. Where most members of the class used a text file to save information, I opted to use the mysqlite3 library in Python.</p>
+          
+          <p>My database structure at the time was basic and consisted of a single table that held all results. The staff client, intended for teacher use, simply printed out the contents of the table. However, with much experience following on from this project, my database structure is much more normalised and features relationships, authentication measures, and a multitude of datatypes.</p>
+
+          <p>The project was written in a procedural-style long list of nested if statements. At the time, my understanding of object-orientated programming was poor, and so the whole program was written out linerarly. The opening lines of the quiz at the top, and the database saving and score results were at the very bottom. This was of course entry-level practices.</p>
+
+          <p>My A-Level Project, Paperwork++ is completely different. In the four year journey between the Maths Quiz and this project, I've learned a whole lot.</p>
+
+          <ul>
+            <li><strong>Planning</strong> - This key element is huge to completing projects big and small. In the aforementioned Maths Quiz, planning was minimal and consisted mostly of descisions about various different choices regarding solutions. Now, with Paperwork++, I know that planning is paramount to keeping on top of development. Gant charts, agile methodology, and so on are all important to development.</li>
+            <li><strong>Modular Programming</strong> - Instead of filling an executable with all of your repetetive, drawn-out code, is no way to make quiality software. By using modular programming techniques and breaking down a paradigm into sections, development is much easier.</li>
+            <li><strong>Security Implications</strong> - My understanding the implications of holding sensitive data, from connection strings to actual user data, has grown substantially, especially in the last few months of Paperwork++'s development.</li>
+            <li><strong>Support Requests</strong> - Being able to handle support requests, feedback, bug reports and so on is vital, otherwise you can get snowed under very quickly. With Paperwork++'s forum, requests can be properly managed in a timely and efficient manner.</li>
+          </ul>
+
+          <p>This just goes to show how in the course of four years my ability has grown and adapted to suit different needs.</p>
+
+          <p>A copy of my GCSE Maths Quiz code will be available soon, so that you may view the style in which it has been written, and compare it to that showcased above.</p>
+
+          <p><a href="http://paperworkplus.net">Paperwork++</a> is still being developed. As the process continues, more and more information will be added to this section. </p>
+
+
+
           <br>
 
         </div>
